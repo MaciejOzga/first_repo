@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pl">
+<title>JavaScript Project #1</title>
+<head>
+	<meta charset="utf-8" />
+	<script type="text/javascript">
+		function check()
+		{
+			var number = document.getElementById("pole").value;
+			if (number>0) document.getElementById("result").innerHTML="Positive";
+			else if (number<0) document.getElementById("result").innerHTML="Negative";
+			else if (number==0) document.getElementById("result").innerHTML="Zero";
+			else document.getElementById("result").innerHTML="It is not a number";
+		}
+	</script>
+</head>
+<body>
+	<input type="text" id="pole" />
+	<input type="submit" value="Check" onclick="check()"/>
+	<div id="result"></div>
+</body>
+</html>
+
+
